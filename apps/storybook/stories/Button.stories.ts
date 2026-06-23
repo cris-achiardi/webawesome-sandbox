@@ -30,6 +30,11 @@ type Story = StoryObj;
 export const Default: Story = {};
 
 export const Variants: Story = {
+  args: {
+    appearance: "filled",
+    variant: "success"
+  },
+
   render: () => html`
     <div style="display:flex; gap:8px; flex-wrap:wrap;">
       <wa-button variant="neutral">Neutral</wa-button>
@@ -38,5 +43,5 @@ export const Variants: Story = {
       <wa-button variant="warning">Warning</wa-button>
       <wa-button variant="danger">Danger</wa-button>
     </div>
-  `,
+  `
 };
