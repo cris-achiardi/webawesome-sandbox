@@ -14,7 +14,8 @@ system — and to scaffold a **W3C DTCG + Style Dictionary** design-token pipeli
 | `packages/tokens` | Design tokens in **W3C DTCG** format, built with **Style Dictionary v5** → CSS variables + JS/TS. **Multi-brand** (core + per-brand layers). Scaffold only (placeholder values — real tokens TBD). |
 | `apps/vue-sandbox` | Vite + Vue 3 app importing `wa-*` components to test bindings + a live **brand switcher**. |
 | `apps/angular-sandbox` | Angular app importing the same `wa-*` components — focus on `[(ngModel)]` / two-way binding + brand switcher. |
-| `apps/storybook` | Web-components Storybook to browse components, with a **brand** toolbar picker. |
+| `apps/storybook` | Web-components Storybook to browse **all** components, with a **brand** toolbar picker. |
+| `docs/` | **Generated** reference: every WA design token ([`tokens.md`](docs/tokens.md)) + full component API catalog ([`prop-map.md`](docs/prop-map.md)). Run `npm run docs`. |
 
 ## Key facts (Web Awesome)
 

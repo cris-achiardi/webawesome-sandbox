@@ -12,6 +12,7 @@
     "apps/*"
   ],
   "scripts": {
+    "docs": "node scripts/build-docs.cjs",
     "build:tokens": "npm run build -w @ws/tokens",
     "dev:vue": "npm run dev -w @ws/vue-sandbox",
     "dev:angular": "npm start -w @ws/angular-sandbox",
