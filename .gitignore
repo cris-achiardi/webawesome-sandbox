@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+build/
+storybook-static/
+
+# framework caches
+.angular/
+.vite/
+*.tsbuildinfo
+
+# logs
+npm-debug.log*
+*.log
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

@@ -1,0 +1,14 @@
+{
+  "space": {
+    "$type": "dimension",
+    "xs": { "$value": "4px", "$description": "PLACEHOLDER spacing scale" },
+    "sm": { "$value": "8px", "$description": "PLACEHOLDER spacing scale" },
+    "md": { "$value": "16px", "$description": "PLACEHOLDER spacing scale" },
+    "lg": { "$value": "24px", "$description": "PLACEHOLDER spacing scale" }
+  },
+  "radius": {
+    "$type": "dimension",
+    "sm": { "$value": "4px", "$description": "PLACEHOLDER" },
+    "md": { "$value": "8px", "$description": "PLACEHOLDER" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "color": {
+    "brand": {
+      "$type": "color",
+      "primary": { "$value": "{color.blue.500}", "$description": "Acme brand — blue" },
+      "primary-hover": { "$value": "{color.blue.700}" }
+    },
+    "surface": {
+      "$type": "color",
+      "default": { "$value": "{color.gray.50}" }
+    },
+    "text": {
+      "$type": "color",
+      "default": { "$value": "{color.gray.900}" }
+    }
+  },
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "body": { "$value": "{font.family.sans}", "$description": "Acme — sans-serif" }
+    }
+  }
+}

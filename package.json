@@ -1,0 +1,20 @@
+{
+  "name": "webawesome-sandbox",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Sandbox to evaluate Web Awesome web components as a foundation for an Angular + Vue design system, with a W3C DTCG + Style Dictionary token pipeline.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:tokens": "npm run build -w @ws/tokens",
+    "dev:vue": "npm run dev -w @ws/vue-sandbox",
+    "dev:angular": "npm start -w @ws/angular-sandbox",
+    "dev:storybook": "npm run storybook -w @ws/storybook"
+  }
+}

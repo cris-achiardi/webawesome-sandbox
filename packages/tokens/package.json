@@ -1,0 +1,32 @@
+{
+  "name": "@ws/tokens",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Design tokens (W3C DTCG) built with Style Dictionary into CSS variables + JS/TS.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    "./theme": "./theme.css",
+    "./css/core": "./dist/css/core.css",
+    ".": {
+      "types": "./dist/js/core.d.ts",
+      "default": "./dist/js/core.js"
+    }
+  },
+  "files": [
+    "dist",
+    "theme.css",
+    "tokens"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "style-dictionary": "^5.5.0"
+  }
+}

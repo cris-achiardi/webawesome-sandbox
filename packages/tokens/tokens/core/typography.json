@@ -1,0 +1,20 @@
+{
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "sans": { "$value": "system-ui, -apple-system, 'Segoe UI', sans-serif", "$description": "PLACEHOLDER core type stack" },
+      "serif": { "$value": "Georgia, Cambria, 'Times New Roman', serif", "$description": "PLACEHOLDER core type stack" }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "regular": { "$value": 400, "$description": "PLACEHOLDER" },
+      "bold": { "$value": 700, "$description": "PLACEHOLDER" }
+    },
+    "size": {
+      "$type": "dimension",
+      "sm": { "$value": "14px", "$description": "PLACEHOLDER" },
+      "md": { "$value": "16px", "$description": "PLACEHOLDER" },
+      "lg": { "$value": "20px", "$description": "PLACEHOLDER" }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "color": {
+    "$type": "color",
+    "blue": {
+      "500": { "$value": "#2680eb", "$description": "PLACEHOLDER core palette" },
+      "700": { "$value": "#1473e6", "$description": "PLACEHOLDER core palette" }
+    },
+    "green": {
+      "50": { "$value": "#f0fdf4", "$description": "PLACEHOLDER core palette" },
+      "500": { "$value": "#16a34a", "$description": "PLACEHOLDER core palette" },
+      "700": { "$value": "#15803d", "$description": "PLACEHOLDER core palette" }
+    },
+    "gray": {
+      "0": { "$value": "#ffffff", "$description": "PLACEHOLDER core palette" },
+      "50": { "$value": "#f5f5f5", "$description": "PLACEHOLDER core palette" },
+      "900": { "$value": "#111111", "$description": "PLACEHOLDER core palette" }
+    }
+  }
+}

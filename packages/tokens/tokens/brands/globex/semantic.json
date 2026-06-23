@@ -1,0 +1,23 @@
+{
+  "color": {
+    "brand": {
+      "$type": "color",
+      "primary": { "$value": "{color.green.500}", "$description": "Globex brand — green" },
+      "primary-hover": { "$value": "{color.green.700}" }
+    },
+    "surface": {
+      "$type": "color",
+      "default": { "$value": "{color.green.50}" }
+    },
+    "text": {
+      "$type": "color",
+      "default": { "$value": "{color.gray.900}" }
+    }
+  },
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "body": { "$value": "{font.family.serif}", "$description": "Globex — serif" }
+    }
+  }
+}

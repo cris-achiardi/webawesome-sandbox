@@ -1,0 +1,20 @@
+{
+  "name": "@ws/storybook",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build": "storybook build"
+  },
+  "dependencies": {
+    "@awesome.me/webawesome": "3.9.0",
+    "@ws/tokens": "*"
+  },
+  "devDependencies": {
+    "@storybook/web-components-vite": "^10.4.6",
+    "lit": "^3.2.1",
+    "storybook": "^10.4.6",
+    "vite": "^6.0.5"
+  }
+}

@@ -1,0 +1,67 @@
+/**
+ * Web Awesome theme bridge — MULTI-BRAND.
+ *
+ * Layers:
+ *   1. core.css      → primitives at :root (shared by all brands)
+ *   2. <brand>.css   → our semantic tokens, scoped to .wa-theme-<brand>
+ *   3. the bridge    → maps Web Awesome's tokens onto each brand
+ *
+ * IMPORTANT — how Web Awesome brand color actually works:
+ *   A filled brand button's background is var(--wa-color-fill-loud); variant="brand"
+ *   remaps that to var(--wa-color-brand-fill-loud), which resolves to a step in the
+ *   brand COLOR RAMP: --wa-color-brand-05 … 95. Every brand surface (fills, borders,
+ *   hovers, text-on-brand) derives from that ramp. So to re-brand you must remap the
+ *   WHOLE ramp — not a single token. That's exactly what Web Awesome's own
+ *   `.wa-brand-*` utility classes do; we do the same per theme scope below.
+ *   (WA's defaults live in @layer wa-color-variant, so this UNLAYERED block wins.)
+ *
+ *   For a truly custom brand hex you'd generate an 11-step ramp from it and map the
+ *   ramp to that. Here each brand points at a built-in Web Awesome base palette.
+ *
+ * LOAD ORDER: import AFTER `webawesome.css` + a base theme so these overrides win.
+ */
+
+/* 1 + 2: token layers */
+@import './dist/css/core.css';
+@import './dist/css/acme.css';
+@import './dist/css/globex.css';
+
+/* 3a: brand color ramp — Acme = blue */
+.wa-theme-acme {
+  --wa-color-brand-95: var(--wa-color-blue-95);
+  --wa-color-brand-90: var(--wa-color-blue-90);
+  --wa-color-brand-80: var(--wa-color-blue-80);
+  --wa-color-brand-70: var(--wa-color-blue-70);
+  --wa-color-brand-60: var(--wa-color-blue-60);
+  --wa-color-brand-50: var(--wa-color-blue-50);
+  --wa-color-brand-40: var(--wa-color-blue-40);
+  --wa-color-brand-30: var(--wa-color-blue-30);
+  --wa-color-brand-20: var(--wa-color-blue-20);
+  --wa-color-brand-10: var(--wa-color-blue-10);
+  --wa-color-brand-05: var(--wa-color-blue-05);
+  --wa-color-brand: var(--wa-color-blue);
+}
+
+/* 3b: brand color ramp — Globex = green */
+.wa-theme-globex {
+  --wa-color-brand-95: var(--wa-color-green-95);
+  --wa-color-brand-90: var(--wa-color-green-90);
+  --wa-color-brand-80: var(--wa-color-green-80);
+  --wa-color-brand-70: var(--wa-color-green-70);
+  --wa-color-brand-60: var(--wa-color-green-60);
+  --wa-color-brand-50: var(--wa-color-green-50);
+  --wa-color-brand-40: var(--wa-color-green-40);
+  --wa-color-brand-30: var(--wa-color-green-30);
+  --wa-color-brand-20: var(--wa-color-green-20);
+  --wa-color-brand-10: var(--wa-color-green-10);
+  --wa-color-brand-05: var(--wa-color-green-05);
+  --wa-color-brand: var(--wa-color-green);
+}
+
+/* 3c: structural, brand-agnostic bridges (same for every brand scope) */
+.wa-theme-acme,
+.wa-theme-globex {
+  --wa-font-family-body: var(--font-family-body);
+  --wa-font-family-heading: var(--font-family-body);
+  --wa-border-radius-m: var(--radius-md);
+}

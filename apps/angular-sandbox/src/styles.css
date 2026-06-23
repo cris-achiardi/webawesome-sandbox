@@ -1,0 +1,12 @@
+/* Global styles for the Angular sandbox.
+ * Order matters: Web Awesome base + theme first, then our token override last. */
+@import '@awesome.me/webawesome/dist/styles/webawesome.css';
+@import '@awesome.me/webawesome/dist/styles/themes/default.css';
+@import '@ws/tokens/theme';
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body, system-ui, sans-serif);
+  color: var(--color-text-default, #111);
+  background: var(--color-surface-default, #f5f5f5);
+}
