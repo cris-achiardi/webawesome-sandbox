@@ -3,7 +3,7 @@
  *
  *   docs/tokens.md     — every global --wa-* design token + per-component CSS custom properties
  *   docs/prop-map.md   — component API catalog (axes registry, value glossary, prop index,
- *                        events, slots, consistency notes) modeled on Enara's prop-map format
+ *                        events, slots, consistency notes) in a prop-glossary format
  *   apps/storybook/src/register-all.ts — imports all components so Storybook is a full gallery
  *
  * Sources (read-only): @awesome.me/webawesome/dist/custom-elements.json + styles/*.css.
